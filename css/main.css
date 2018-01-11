@@ -1,0 +1,433 @@
+.nav li, li, ul {
+    list-style: none
+}
+
+.nav, .page2-title, .page2-tu, .se-1 li, .se-content {
+    text-align: center
+}
+
+.nav, .page3-c {
+    top: 0;
+    z-index: 100
+}
+
+body {
+    background-color: #FFF;
+    font-family:Impact
+}
+
+li, ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    line-height: 40px
+}
+
+.nav li.active {
+    background-color: #FFF;
+    color: #666
+}
+
+.nav li.active a {
+    text-decoration: none;
+    color: #666
+}
+
+.nav li {
+    float: left;
+    padding: 0 15px;
+    cursor: pointer;
+    background-color: #333;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    color: #FFF
+}
+
+.nav li:hover, .se-content, .section {
+    background-color: #FFF
+}
+
+.nav li:hover a {
+    color: #666
+}
+
+.nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-transform: none;
+    text-decoration: none;
+    color: #FFF
+}
+
+.nav li a:hover {
+    text-decoration: none;
+    color: #666
+}
+
+.section {
+    color: #666;
+    overflow: hidden
+}
+
+.orgin, .page2-blod {
+    color: #ff6700
+}
+
+.page2-zi a {
+    text-decoration: none;
+}
+.se-content {
+    width: 60%;
+    height: 200px;
+    margin: 0 auto
+}
+
+.se-h1 {
+    font-size: 40px;
+    line-height: 150px;
+    -webkit-transition: all .4s .7s;
+    -moz-transition: all .4s .7s;
+    -ms-transition: all .4s .7s;
+    -o-transition: all .4s .7s;
+    transition: all .4s .7s;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0
+}
+
+.section.active .se-h1 {
+    font-size: 80px;
+    line-height: 150px;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1
+}
+
+.se {
+    line-height: 40px
+}
+
+.se-1 {
+    margin-top: 60px
+}
+
+.se-1 li {
+    float: left;
+    width: 33%;
+    -webkit-transition: all .7s 1.1s;
+    -moz-transition: all .7s 1.1s;
+    -ms-transition: all .7s 1.1s;
+    -o-transition: all .7s 1.1s;
+    transition: all .7s 1.1s;
+    margin-left: -1400px;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0
+}
+
+.se-1 img {
+    width: 100px;
+    height: 100px
+}
+
+
+
+.img-h:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.section.active .se-1 li {
+    margin-left: 0;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1
+}
+
+.page2-title {
+    font-size: 20px;
+    line-height: 150px;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    -webkit-transition: all .3s .7s;
+    -o-transition: all .3s .7s;
+    transition: all .3s .7s
+}
+
+.section.active .page2-title {
+    font-size: 60px;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1
+}
+
+.page2-tu img, .page3-list li {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0
+}
+
+.page2-tu img {
+    margin-left: -1500px;
+    opacity: 0;
+    -webkit-transition: all .5s 1s ease-in-out;
+    -o-transition: all .5s 1s ease-in-out;
+    transition: all .5s 1s ease-in-out
+}
+
+.page3-list li:hover .page3-c, .section.active .page2-tu img {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1
+}
+
+.section.active .page2-tu img {
+    margin-left: 0;
+    opacity: 1;
+    border-radius: 10px
+}
+
+.page2-blod {
+    font-weight: 700
+}
+
+.page3-title {
+    font-size: 30px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 30px;
+    clear: both
+}
+
+.page3-list li {
+    float: left;
+    width: 20%;
+    height: auto;
+    padding-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .7s .7s ease-in-out;
+    -o-transition: all .7s .7s ease-in-out;
+    transition: all .7s .7s ease-in-out;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0
+}
+
+.page3-c, .page4-content {
+    position: absolute;
+    left: 0
+}
+
+.page3-list img {
+    width: 50%;
+    height: auto
+}
+
+.page3-c {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    width: 85%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    line-height: 26px;
+    overflow: hidden;
+    font-size: 14px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
+
+.page3-list li:hover .page3-c {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .8);
+    color: #FFF;
+    height: 80%
+}
+
+.page3-h, .page4-title {
+    color: #ff6700
+}
+
+.section.active .page3-list li {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0)
+}
+
+.page4-1 li {
+    width: 33%;
+    float: left;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .5s .7s ease-in-out;
+    -o-transition: all .5s .7s ease-in-out;
+    transition: all .5s .7s ease-in-out
+}
+
+.section.active .page4-1 li {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1)
+}
+
+.page4-x {
+    font-size: 40px
+}
+
+.page4-2 li {
+    width: 25%;
+    float: left
+}
+
+.page4-tu img {
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+    border-radius: 60%;
+    width: 75%;
+    height: auto
+}
+
+.page4-title {
+    margin-top: 20px
+}
+
+.page4-content {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    background-color: #000;
+    top: -25px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    line-height: 25px
+}
+
+.page4-zhong {
+    font-size: 30px;
+    margin-bottom: 40px
+}
+
+.page4-2 li {
+    position: relative;
+    cursor: pointer;
+    color: #FFF;
+    -webkit-transition: all .7s 1.6s ease-in-out;
+    -o-transition: all .7s 1.6s ease-in-out;
+    transition: all .7s 1.6s ease-in-out;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0)
+}
+
+.section.active .page4-2 li {
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+    transform: scale(.9)
+}
+
+.page4-2 li:hover .page4-content {
+    height: 115%;
+    -webkit-opacity: .8;
+    -moz-opacity: .8;
+    -ms-opacity: .8;
+    -o-opacity: .8;
+    opacity: .8
+}
+
+.page5-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.page5-content {
+    line-height: 30px
+}
+
+.page5-zi {
+    color: #ff6700
+}
